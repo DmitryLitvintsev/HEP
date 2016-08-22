@@ -1,0 +1,197 @@
+ ***************************************************************************
+  MINUIT RELEASE 96.03  INITIALIZED.   DIMENSIONS 100/ 50  EPSMAC=  0.89E-15
+ ***************************************************************************
+                          MINUIT DATA BLOCK NO.   1
+ ***************************************************************************
+ ENTER MINUIT TITLE, or "SET INPUT n" : 
+ ENTER MINUIT TITLE, or "SET INPUT n" : 
+ FIT xicst                                         
+ ******************************************************************************
+ ENTER MINUIT PARAMETER DEFINITION:     
+ ENTER MINUIT PARAMETER DEFINITION:     
+     1 'N1        '    1000.0      0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     2 'SIG1      '   0.37000E-02  0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     3 'GAMMA     '   0.91000E-02  constant
+ ENTER MINUIT PARAMETER DEFINITION:     
+     4 'M1        '    1.5320      0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     5 'A0        '   0.20000E-02  0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     6 'A1        '   0.20000E-02  0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     7 'A2        '    0.0000      0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     8 'A3        '    0.0000      0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     9 'N2        '    1000.0       10.000         no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    10 'SIG2      '   0.39000E-02  0.12000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    11 'M2        '    1.8620      0.20000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    12 'SIG3      '   0.15000E-02  0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    13 'R1        '   0.42000      0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    14 'SIG4      '   0.96000E-02  0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    15 'R2        '    1.9400      0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+
+ MINUIT: FIRST CALL TO USER FUNCTION, WITH IFLAG=1
+
+ FCN=  -463640.3     FROM PARAMETR  STATUS=RESET          2 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          1000.0       0.10000E-03
+   2    SIG1       0.37000E-02   0.10000E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320       0.50000E-02
+   5    A0         0.20000E-02   0.50000E-02
+   6    A1         0.20000E-02   0.50000E-02
+   7    A2          0.0000       0.50000E-02
+   8    A3          0.0000       0.50000E-02
+   9    N2          1000.0        10.000    
+  10    SIG2       0.39000E-02   0.12000E-02
+  11    M2          1.8620       0.20000E-02
+  12    SIG3       0.15000E-02   0.10000E-03
+  13    R1         0.42000       0.10000E-03
+  14    SIG4       0.96000E-02   0.10000E-03
+  15    R2          1.9400       0.10000E-03
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    1 **SHOW PAR 
+ **********
+
+ FCN=  -463640.3     FROM PARAMETR  STATUS=RESET          2 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          1000.0       0.10000E-03
+   2    SIG1       0.37000E-02   0.10000E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320       0.50000E-02
+   5    A0         0.20000E-02   0.50000E-02
+   6    A1         0.20000E-02   0.50000E-02
+   7    A2          0.0000       0.50000E-02
+   8    A3          0.0000       0.50000E-02
+   9    N2          1000.0        10.000    
+  10    SIG2       0.39000E-02   0.12000E-02
+  11    M2          1.8620       0.20000E-02
+  12    SIG3       0.15000E-02   0.10000E-03
+  13    R1         0.42000       0.10000E-03
+  14    SIG4       0.96000E-02   0.10000E-03
+  15    R2          1.9400       0.10000E-03
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    2 **SET STR    2.000    
+ **********
+
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    3 **FIX    2.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    4 **FIX    3.000    
+ **********
+ PARAMETER   3 IS CONSTANT.      IGNORED.
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    5 **FIX    4.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    6 **FIX    10.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    7 **FIX    11.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    8 **FIX    12.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    9 **FIX    13.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   10 **FIX    14.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   11 **FIX    15.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   12 **SET PRI    2.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   13 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 2.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.1025E-02  0.1649E-02  0.3482E-01  0.5896E+00  0.1001E+01  0.4372E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -463640.3     FROM HESSE     STATUS=OK            54 CALLS       56 TOTAL
+                     EDM=  0.53E+05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          1000.0        6.8602       0.47684E-01   -99.707    
+   2    SIG1       0.37000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.20000E-02   0.54890       0.50000E-02   -7333.0    
+   6    A1         0.20000E-02    1.3549       0.50000E-02   -4396.7    
+   7    A2          0.0000        2.4395       0.50000E-02   -2734.5    
+   8    A3          0.0000        2.4336       0.50000E-02   -1743.4    
+   9    N2          1000.0        13.721        10.000       -9.4836    
+  10    SIG2       0.39000E-02     fixed    
+  11    M2          1.8620         fixed    
+  12    SIG3       0.15000E-02     fixed    
+  13    R1         0.42000         fixed    
+  14    SIG4       0.96000E-02     fixed    
+  15    R2          1.9400         fixed    
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     5     6     7     8     9
+        1  0.76062  1.000-0.389 0.120 0.138-0.111-0.009
+        5  0.99718 -0.389 1.000-0.782-0.192 0.516-0.019
+        6  0.99891  0.120-0.782 1.000-0.387-0.074 0.008
+        7  0.99925  0.138-0.192-0.387 1.000-0.870 0.010
+        8  0.99836 -0.111 0.516-0.074-0.870 1.000-0.011
+        9  0.03687 -0.009-0.019 0.008 0.010-0.011 1.000
+
+ FCN=  -741671.7     FROM MIGRAD    STATUS=PROGRESS      89 CALLS       91 TOTAL
+                     EDM=  0.15E+03    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          27059.        6.8602        26059.       -1.6559    
+   2    SIG1       0.37000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0          48.385       0.54890        48.383       -257.61    
+   6    A1         -37.611        1.3549       -37.613       -154.49    
+   7    A2         -83.073        2.4395       -83.073       -96.124    
+   8    A3          69.868        2.4336        69.868       -61.322    
+   9    N2          23250.        13.721        22250.        1.5132    
+  10    SIG2       0.39000E-02     fixed    
+  11    M2          1.8620         fixed    
+  12    SIG3       0.15000E-02     fixed    
+  13    R1         0.42000         fixed    
+  14    SIG4       0.96000E-02     fixed    
+  15    R2          1.9400         fixed    

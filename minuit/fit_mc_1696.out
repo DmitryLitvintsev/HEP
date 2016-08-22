@@ -1,0 +1,127 @@
+ ***************************************************************************
+  MINUIT RELEASE 96.03  INITIALIZED.   DIMENSIONS 100/ 50  EPSMAC=  0.89E-15
+ ***************************************************************************
+                          MINUIT DATA BLOCK NO.   1
+ ***************************************************************************
+ ENTER MINUIT TITLE, or "SET INPUT n" : 
+ ENTER MINUIT TITLE, or "SET INPUT n" : 
+ FIT mc_1862                                       
+ ******************************************************************************
+ ENTER MINUIT PARAMETER DEFINITION:     
+ ENTER MINUIT PARAMETER DEFINITION:     
+     1 'N1        '    1000.0      0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     2 'SIG1      '   0.50000E-02  0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     3 'M1        '    1.8620      0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+
+ MINUIT: FIRST CALL TO USER FUNCTION, WITH IFLAG=1
+
+ FCN=   1636485.     FROM PARAMETR  STATUS=RESET          2 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1     N1         1000.0       0.10000E-03
+   2     SIG1      0.50000E-02   0.10000E-03
+   3     M1         1.8620       0.50000E-02
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    1 ** 
+ **********
+           BLANK COMMAND IGNORED.
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    2 **SHOW PAR 
+ **********
+
+ FCN=   1636485.     FROM           STATUS=RESET          0 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1     N1         1000.0       0.10000E-03
+   2     SIG1      0.50000E-02   0.10000E-03
+   3     M1         1.8620       0.50000E-02
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    3 **SET STR    2.000    
+ **********
+
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    4 **SET PRI    1.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    5 **MIG 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 2.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+        -0.1481E+00  0.1000E+01  0.2148E+01
+ MINUIT WARNING IN HESSE   
+ ============== MATRIX FORCED POS-DEF BY ADDING  0.15024     TO DIAGONAL.
+
+ FCN=   1636485.     FROM HESSE     STATUS=NOT POSDEF    44 CALLS       46 TOTAL
+                     EDM=  0.69E+08    STRATEGY= 2      ERR MATRIX NOT POS-DEF
+
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1     N1         1000.0        24.016       0.47684E-01   -1.0160    
+   2     SIG1      0.50000E-02   0.34281E-04   0.24926E-04  -0.66041E+09
+   3     M1         1.8620       0.19653E-02   0.81641E-03   0.19950E+08
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -29543.81     FROM MIGRAD    STATUS=CONVERGED    268 CALLS      270 TOTAL
+                     EDM=  0.30E-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1     N1         1516.0        38.936        3.2680       0.12904E-04
+   2     SIG1      0.79141E-02   0.14373E-03   0.12064E-04   -2.0528    
+   3     M1         1.6964       0.20326E-03   0.17060E-04    2.5013    
+
+ EXTERNAL ERROR MATRIX.    NDIM=  50    NPAR=  3    ERR DEF=  1.00    
+  0.152E+04-0.173E-10 0.201E-11
+ -0.173E-10 0.207E-07 0.447E-10
+  0.201E-11 0.447E-10 0.413E-07
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     2     3
+        1  0.00000  1.000 0.000 0.000
+        2  0.00153  0.000 1.000 0.002
+        3  0.00153  0.000 0.002 1.000
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    6 **MINOS 
+ **********
+
+ MINUIT TASK: FIT mc_1862                                       
+
+ FCN=  -29543.81     FROM MINOS     STATUS=SUCCESSFUL   117 CALLS      387 TOTAL
+                     EDM=  0.30E-06    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME        VALUE          ERROR      NEGATIVE      POSITIVE   
+   1     N1         1516.0        38.936       -38.613        39.260    
+   2     SIG1      0.79141E-02   0.14373E-03  -0.14156E-03   0.14595E-03
+   3     M1         1.6964       0.20326E-03  -0.20335E-03   0.20324E-03
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    7 **CALL FCN 
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    8 **STOP 
+ **********
+
+ CALL TO USER FUNCTION WITH IFLAG = 3
+
+ ..........MINUIT TERMINATED BY MINUIT COMMAND: STOP                 

@@ -1,0 +1,20 @@
+SET TITLE
+FIT xib
+PARAMETERS
+ 1  'N1'                   0.          0.0001
+ 2  'SIG1'                 0.016       0.0001
+ 3  'M1'                   5.8          0.005
+ 4  'A0'                   0.002        0.005
+
+ SHOW PAR
+ SET STR 2
+ FIX 2
+ FIX 3
+ SET PRI 2
+ MIGRAD
+ REL 3
+ MIGRAD
+ MINOS
+ CALL FCN
+ STOP
+

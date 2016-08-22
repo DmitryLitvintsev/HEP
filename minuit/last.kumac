@@ -1,0 +1,10 @@
+*** Begin of history file: Sun Jan 21 16:37:05 2007
+h/file 80 xist.hist
+h/li
+h/plot  1
+h/plot  1(:100)
+h/fit 1(:1000 m 8 par
+h/fit 1(:1000) fit.f  m 8 par
+h/plot  1(:100)
+quit
+*** End   of history file: Sun Jan 21 16:40:35 2007

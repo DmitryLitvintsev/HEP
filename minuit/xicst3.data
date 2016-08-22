@@ -1,0 +1,25 @@
+SET TITLE
+FIT xicst
+PARAMETERS
+ 1  'N1'                   100.         10.00
+ 2  'SIG1'                 0.008        0.0012          
+ 3  'M1'                   1.862        0.002
+ 4  'A0'                   0.002        0.005
+ 5  'A1'                   0.002        0.005
+ 6  'A2'                   0.000        0.005
+ 7  'A3'                   0.000        0.005
+
+ SHOW PAR 
+ FIX 2 
+ FIX 3 
+ SET PRI 1
+ SET STR 2 
+ MIGRAD 
+ REL 2 
+ REL 3 
+ MIGRAD
+ MINOS
+ CALL FCN
+ STOP
+
+

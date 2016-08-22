@@ -1,0 +1,613 @@
+ ***************************************************************************
+  MINUIT RELEASE 96.03  INITIALIZED.   DIMENSIONS 100/ 50  EPSMAC=  0.89E-15
+ ***************************************************************************
+                          MINUIT DATA BLOCK NO.   1
+ ***************************************************************************
+ ENTER MINUIT TITLE, or "SET INPUT n" : 
+ ENTER MINUIT TITLE, or "SET INPUT n" : 
+ FIT xicst                                         
+ ******************************************************************************
+ ENTER MINUIT PARAMETER DEFINITION:     
+ ENTER MINUIT PARAMETER DEFINITION:     
+     1 'N1        '    1000.0      0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     2 'SIG1      '   0.50000E-02  0.10000E-03     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     3 'GAMMA     '   0.91000E-02  constant
+ ENTER MINUIT PARAMETER DEFINITION:     
+     4 'M1        '    1.5320      0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     5 'A0        '   0.20000E-02  0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     6 'A1        '   0.20000E-02  0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     7 'A2        '   0.00000E+00  0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     8 'A3        '   0.00000E+00  0.50000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+     9 'N2        '    1000.0       10.000         no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    10 'SIG2      '   0.80000E-02  0.12000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+    11 'M2        '    1.8620      0.20000E-02     no limits
+ ENTER MINUIT PARAMETER DEFINITION:     
+
+ MINUIT: FIRST CALL TO USER FUNCTION, WITH IFLAG=1
+
+ FCN=  -464454.6     FROM PARAMETR  STATUS=RESET          2 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          1000.0       0.10000E-03
+   2    SIG1       0.50000E-02   0.10000E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320       0.50000E-02
+   5    A0         0.20000E-02   0.50000E-02
+   6    A1         0.20000E-02   0.50000E-02
+   7    A2         0.00000E+00   0.50000E-02
+   8    A3         0.00000E+00   0.50000E-02
+   9    N2          1000.0        10.000    
+  10    SIG2       0.80000E-02   0.12000E-02
+  11    M2          1.8620       0.20000E-02
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    1 **SHOW PAR 
+ **********
+
+ FCN=  -464454.6     FROM PARAMETR  STATUS=RESET          2 CALLS        2 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          1000.0       0.10000E-03
+   2    SIG1       0.50000E-02   0.10000E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320       0.50000E-02
+   5    A0         0.20000E-02   0.50000E-02
+   6    A1         0.20000E-02   0.50000E-02
+   7    A2         0.00000E+00   0.50000E-02
+   8    A3         0.00000E+00   0.50000E-02
+   9    N2          1000.0        10.000    
+  10    SIG2       0.80000E-02   0.12000E-02
+  11    M2          1.8620       0.20000E-02
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    2 **SET STR    2.000    
+ **********
+
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    3 **FIX    2.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    4 **FIX    3.000    
+ **********
+ PARAMETER   3 IS CONSTANT.      IGNORED.
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    5 **FIX    4.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    6 **FIX    10.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    7 **FIX    11.00    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    8 **SET PRI    2.000    
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **    9 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 2.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.1031E-02  0.1654E-02  0.3498E-01  0.5916E+00  0.1001E+01  0.4370E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -464454.6     FROM HESSE     STATUS=OK            54 CALLS       56 TOTAL
+                     EDM=  0.53E+05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          1000.0        6.8505       0.47684E-01   -100.75    
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.20000E-02   0.54694       0.50000E-02   -7382.3    
+   6    A1         0.20000E-02    1.3536       0.50000E-02   -4417.0    
+   7    A2         0.00000E+00    2.4309       0.50000E-02   -2742.7    
+   8    A3         0.00000E+00    2.4260       0.50000E-02   -1746.7    
+   9    N2          1000.0        14.298        10.000       -8.4393    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     5     6     7     8     9
+        1  0.76323  1.000-0.393 0.121 0.139-0.113-0.007
+        5  0.99717 -0.393 1.000-0.783-0.189 0.515-0.015
+        6  0.99891  0.121-0.783 1.000-0.388-0.074 0.006
+        7  0.99924  0.139-0.189-0.388 1.000-0.869 0.008
+        8  0.99835 -0.113 0.515-0.074-0.869 1.000-0.008
+        9  0.02912 -0.007-0.015 0.006 0.008-0.008 1.000
+
+ FCN=  -743456.2     FROM MIGRAD    STATUS=PROGRESS      89 CALLS       91 TOTAL
+                     EDM=  0.16E+03    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          27239.        6.8505        26239.       -1.6678    
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0          48.697       0.54694        48.695       -257.58    
+   6    A1         -39.099        1.3536       -39.101       -154.15    
+   7    A2         -80.803        2.4309       -80.803       -95.760    
+   8    A3          68.966        2.4260        68.966       -61.023    
+   9    N2          22956.        14.298        21956.        1.5513    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ FCN=  -876691.5     FROM MIGRAD    STATUS=PROGRESS     331 CALLS      333 TOTAL
+                     EDM=  0.75E+04  STRATEGY=2  ERROR MATRIX UNCERTAINTY= 28.2%
+
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          13436.        169.91        1498.7       0.12551    
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0          11186.        18.328        7368.3       -22.785    
+   6    A1         -8942.9        14.712       -5892.1       -12.899    
+   7    A2         -18185.        29.845       -11979.       -7.8864    
+   8    A3          15596.        25.641        10277.       -5.0261    
+   9    N2          49460.        111.61        26288.        1.8132    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ FCN=  -1153733.     FROM MIGRAD    STATUS=PROGRESS     599 CALLS      601 TOTAL
+                     EDM=  0.28E+04  STRATEGY=2  ERROR MATRIX UNCERTAINTY= 31.3%
+
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          534.52        90.176       -7254.4      -0.43781    
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.30961E+06    848.64        38321.      -0.16457    
+   6    A1        -0.24754E+06    678.50       -30638.      -0.15132    
+   7    A2        -0.50356E+06    1380.3       -62325.      -0.11491    
+   8    A3         0.43187E+06    1183.8        53453.      -0.82853E-01
+   9    N2          1744.7        44.663       -1771.8       0.95739    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ FCN=  -1156522.     FROM MIGRAD    STATUS=PROGRESS     765 CALLS      767 TOTAL
+                     EDM=  0.41E+02  STRATEGY=2  ERROR MATRIX UNCERTAINTY=  1.7%
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          2058.2        68.100        534.70       0.17835    
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.27524E+06    1304.1       -13401.      -0.21284    
+   6    A1        -0.20492E+06    1054.6        25837.      -0.17005    
+   7    A2        -0.44415E+06    2123.7        25314.      -0.12234    
+   8    A3         0.36110E+06    1837.0       -41508.      -0.85785E-01
+   9    N2         -109.02        48.522        178.55       0.13742    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.8781E-02  0.1559E-01  0.1892E+00  0.9933E+00  0.1010E+01  0.3783E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -1161190.     FROM HESSE     STATUS=OK            44 CALLS      931 TOTAL
+                     EDM=  0.56E+03    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          2609.5        74.816        37.772       0.43558E-04
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.17687E+06    1866.8        266.70      -0.18004E-01
+   6    A1          21707.        7163.5        474.41      -0.14608E-01
+   7    A2        -0.24972E+06    12036.        730.11      -0.14052E-01
+   8    A3          630.72        13130.        1056.7      -0.11850E-01
+   9    N2         -286.63        49.116        24.841       0.99560E-04
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     5     6     7     8     9
+        1  0.28133  1.000-0.276 0.183 0.004-0.093 0.021
+        5  0.96213 -0.276 1.000-0.783 0.106 0.319-0.032
+        6  0.99185  0.183-0.783 1.000-0.541-0.101-0.097
+        7  0.99292  0.004 0.106-0.541 1.000-0.746 0.018
+        8  0.98659 -0.093 0.319-0.101-0.746 1.000 0.101
+        9  0.27554  0.021-0.032-0.097 0.018 0.101 1.000
+
+ FCN=  -1162144.     FROM MIGRAD    STATUS=PROGRESS     952 CALLS      954 TOTAL
+                     EDM=  0.60E+02    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          2350.5        74.816       -258.96      -0.34113E-02
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.20858E+06    1866.8        31717.      -0.10559E-01
+   6    A1        -0.15945E+06    7163.5      -0.18116E+06  -0.28079E-03
+   7    A2        -0.24969E+06    12036.        27.437       0.75565E-03
+   8    A3         0.34200E+06    13130.       0.34137E+06   0.69755E-03
+   9    N2          35.994        49.116        322.62      -0.94525E-02
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+ CALL LIMIT EXCEEDED IN MIGRAD.
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+
+ FCN=  -1162235.     FROM MIGRAD    STATUS=CALL LIMIT   980 CALLS      982 TOTAL
+                     EDM=  0.38E+00  STRATEGY=2  ERROR MATRIX UNCERTAINTY=  7.5%
+
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          2117.4        76.320        4.6865       0.17076E-02
+   2    SIG1       0.50000E-02     fixed    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.23275E+06    2696.1        2232.3      -0.26922E-03
+   6    A1        -0.22745E+06    10577.       -11037.      -0.49038E-04
+   7    A2        -0.25514E+06    12953.        5119.1      -0.51192E-04
+   8    A3         0.41859E+06    15351.        6880.5       0.49925E-04
+   9    N2          28.720        49.307        9.7314      -0.99299E-03
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ EXTERNAL ERROR MATRIX.    NDIM=  50    NPAR=  6    ERR DEF=  1.00    
+  0.582E+04-0.697E+05 0.219E+06 0.679E+04-0.266E+06-0.284E+02
+ -0.697E+05 0.727E+07-0.254E+08 0.789E+07 0.205E+08 0.599E+04
+  0.219E+06-0.254E+08 0.112E+09-0.741E+08-0.530E+08-0.690E+05
+  0.679E+04 0.789E+07-0.741E+08 0.168E+09-0.116E+09 0.273E+05
+ -0.266E+06 0.205E+08-0.530E+08-0.116E+09 0.236E+09 0.920E+05
+ -0.284E+02 0.599E+04-0.690E+05 0.273E+05 0.920E+05 0.243E+04
+ ERR MATRIX APPROXIMATE
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     5     6     7     8     9
+        1  0.34932  1.000-0.339 0.271 0.007-0.227-0.008
+        5  0.98187 -0.339 1.000-0.892 0.226 0.494 0.045
+        6  0.99584  0.271-0.892 1.000-0.541-0.326-0.132
+        7  0.99303  0.007 0.226-0.541 1.000-0.585 0.043
+        8  0.98731 -0.227 0.494-0.326-0.585 1.000 0.122
+        9  0.29106 -0.008 0.045-0.132 0.043 0.122 1.000
+ ERR MATRIX APPROXIMATE
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   10 **REL    2.000    
+ **********
+                    PARAMETER   2, SIG1       RESTORED TO VARIABLE.
+
+ FCN=  -1162235.     FROM RELease   STATUS=RESET          0 CALLS      982 TOTAL
+                     EDM= unknown      STRATEGY= 2      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          2117.4        76.320    
+   2    SIG1       0.50000E-02   0.10000E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320         fixed    
+   5    A0         0.23275E+06    2696.1    
+   6    A1        -0.22745E+06    10577.    
+   7    A2        -0.25514E+06    12953.    
+   8    A3         0.41859E+06    15351.    
+   9    N2          28.720        49.307    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   11 **REL    4.000    
+ **********
+                    PARAMETER   4, M1         RESTORED TO VARIABLE.
+
+ FCN=  -1162235.     FROM RELease   STATUS=RESET          0 CALLS      982 TOTAL
+                     EDM= unknown      STRATEGY= 2      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          2117.4        76.320    
+   2    SIG1       0.50000E-02   0.10000E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320       0.50000E-02
+   5    A0         0.23275E+06    2696.1    
+   6    A1        -0.22745E+06    10577.    
+   7    A2        -0.25514E+06    12953.    
+   8    A3         0.41859E+06    15351.    
+   9    N2          28.720        49.307    
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   12 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 2.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.7222E-02  0.1416E-01  0.1803E+00  0.2374E+00  0.9044E+00  0.9911E+00
+         0.1889E+01  0.3777E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -1162235.     FROM HESSE     STATUS=OK            71 CALLS     1053 TOTAL
+                     EDM=  0.19E+02    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          2117.4        82.062        36.380       0.17514E-02
+   2    SIG1       0.50000E-02   0.84870E-03   0.10000E-03    7541.0    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5320       0.53952E-03   0.57785E-02    4993.0    
+   5    A0         0.23275E+06    2186.0        280.44      -0.26762E-03
+   6    A1        -0.22745E+06    8555.4        528.73      -0.47974E-04
+   7    A2        -0.25514E+06    15455.        853.43      -0.50474E-04
+   8    A3         0.41859E+06    16651.        1265.7       0.50389E-04
+   9    N2          28.720        50.058        25.412      -0.90100E-03
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     2     4     5     6     7     8     9
+        1  0.53324  1.000 0.451 0.257-0.351 0.241 0.005-0.128 0.021
+        2  0.80650  0.451 1.000 0.760-0.223 0.148 0.009-0.082 0.016
+        4  0.76671  0.257 0.760 1.000-0.118 0.073 0.011-0.045 0.011
+        5  0.97001 -0.351-0.223-0.118 1.000-0.805 0.119 0.317-0.021
+        6  0.99299  0.241 0.148 0.073-0.805 1.000-0.568-0.021-0.085
+        7  0.99411  0.005 0.009 0.011 0.119-0.568 1.000-0.780 0.013
+        8  0.98752 -0.128-0.082-0.045 0.317-0.021-0.780 1.000 0.088
+        9  0.27258  0.021 0.016 0.011-0.021-0.085 0.013 0.088 1.000
+
+ FCN=  -1162239.     FROM MIGRAD    STATUS=PROGRESS      93 CALLS     1075 TOTAL
+                     EDM=  0.14E+01    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          2087.7        82.062       -29.743       0.67736E-02
+   2    SIG1       0.42964E-02   0.84870E-03  -0.70358E-03    2633.0    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5316       0.53952E-03  -0.39906E-03   -1930.4    
+   5    A0         0.23315E+06    2186.0        399.87      -0.28507E-03
+   6    A1        -0.22884E+06    8555.4       -1389.2      -0.26335E-04
+   7    A2        -0.25336E+06    15455.        1783.8      -0.51238E-04
+   8    A3         0.41762E+06    16651.       -973.71       0.42044E-04
+   9    N2          27.755        50.058      -0.96488      -0.72554E-03
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.7249E-02  0.1441E-01  0.2048E+00  0.6722E+00  0.9910E+00  0.1003E+01
+         0.1334E+01  0.3773E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -1162269.     FROM MIGRAD    STATUS=CONVERGED    280 CALLS     1262 TOTAL
+                     EDM=  0.20E-04    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          1886.1        74.185        35.043       0.32775E-04
+   2    SIG1       0.32726E-02   0.50398E-03   0.24630E-03   -1.1570    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5317       0.30071E-03   0.15823E-03   -12.555    
+   5    A0         0.25979E+06    2161.7        278.76       0.29562E-05
+   6    A1        -0.47753E+06    8525.8        524.67       0.18782E-05
+   7    A2         0.38636E+06    15380.        845.24       0.12240E-05
+   8    A3         -70525.        16490.        1251.4       0.76796E-06
+   9    N2          59.007        50.171        25.416       0.80599E-04
+  10    SIG2       0.80000E-02     fixed    
+  11    M2          1.8620         fixed    
+
+ EXTERNAL ERROR MATRIX.    NDIM=  50    NPAR=  8    ERR DEF=  1.00    
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  0.550E+04
+  0.136E-01 0.254E-06
+  0.678E-03 0.653E-08 0.904E-07
+ -0.484E+05-0.183E+00-0.558E-02 0.467E+07
+  0.133E+06 0.503E+00 0.320E-02-0.149E+08 0.727E+08
+  0.966E+03 0.306E-02 0.230E-01 0.421E+07-0.750E+08 0.237E+09
+ -0.133E+06-0.504E+00-0.214E-01 0.112E+08-0.242E+07-0.198E+09 0.272E+09
+  0.614E+02 0.232E-03 0.344E-04-0.189E+04-0.371E+05 0.998E+04 0.733E+05
+  0.252E+04
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     2     4     5     6     7     8     9
+        1  0.44164  1.000 0.365 0.030-0.302 0.210 0.001-0.109 0.016
+        2  0.37148  0.365 1.000 0.043-0.168 0.117 0.000-0.061 0.009
+        4  0.04662  0.030 0.043 1.000-0.009 0.001 0.005-0.004 0.002
+        5  0.96927 -0.302-0.168-0.009 1.000-0.806 0.127 0.313-0.017
+        6  0.99293  0.210 0.117 0.001-0.806 1.000-0.572-0.017-0.087
+        7  0.99408  0.001 0.000 0.005 0.127-0.572 1.000-0.780 0.013
+        8  0.98743 -0.109-0.061-0.004 0.313-0.017-0.780 1.000 0.089
+        9  0.27175  0.016 0.009 0.002-0.017-0.087 0.013 0.089 1.000
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   13 **REL    10.00    
+ **********
+                    PARAMETER  10, SIG2       RESTORED TO VARIABLE.
+
+ FCN=  -1162269.     FROM RELease   STATUS=RESET          0 CALLS     1262 TOTAL
+                     EDM= unknown      STRATEGY= 2      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          1886.1        74.185    
+   2    SIG1       0.32726E-02   0.50398E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5317       0.30071E-03
+   5    A0         0.25979E+06    2161.7    
+   6    A1        -0.47753E+06    8525.8    
+   7    A2         0.38636E+06    15380.    
+   8    A3         -70525.        16490.    
+   9    N2          59.007        50.171    
+  10    SIG2       0.80000E-02   0.12000E-02
+  11    M2          1.8620         fixed    
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   14 **REL    11.00    
+ **********
+                    PARAMETER  11, M2         RESTORED TO VARIABLE.
+
+ FCN=  -1162269.     FROM RELease   STATUS=RESET          0 CALLS     1262 TOTAL
+                     EDM= unknown      STRATEGY= 2      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          1886.1        74.185    
+   2    SIG1       0.32726E-02   0.50398E-03
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5317       0.30071E-03
+   5    A0         0.25979E+06    2161.7    
+   6    A1        -0.47753E+06    8525.8    
+   7    A2         0.38636E+06    15380.    
+   8    A3         -70525.        16490.    
+   9    N2          59.007        50.171    
+  10    SIG2       0.80000E-02   0.12000E-02
+  11    M2          1.8620       0.20000E-02
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   15 **MIGRAD 
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 2.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.4654E-03  0.8078E-02  0.2000E+00  0.6753E+00  0.8939E+00  0.9910E+00
+         0.1002E+01  0.1106E+01  0.1332E+01  0.3791E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -1162269.     FROM HESSE     STATUS=OK            96 CALLS     1358 TOTAL
+                     EDM=  0.26E-02    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          1886.1        77.164       0.28034       0.32681E-04
+   2    SIG1       0.32726E-02   0.50730E-03   0.98521E-05   -1.2551    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5317       0.30056E-03   0.31645E-04   -12.392    
+   5    A0         0.25979E+06    3600.0        11.151       0.29544E-05
+   6    A1        -0.47753E+06    24681.        20.987       0.18800E-05
+   7    A2         0.38636E+06    60091.        33.810       0.12243E-05
+   8    A3         -70525.        48292.        50.055       0.76834E-06
+   9    N2          59.007        50.808        1.0167       0.80729E-04
+  10    SIG2       0.80000E-02   0.11926E-02   0.12000E-02   -59.801    
+  11    M2          1.8620       0.19702E-02   0.20000E-02   -38.496    
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     2     4     5     6     7     8     9    10    11
+        1  0.50684  1.000 0.389 0.024-0.389 0.280-0.166 0.085-0.012-0.001-0.001
+        2  0.39740  0.389 1.000 0.022-0.222 0.160-0.095 0.049-0.007-0.001-0.001
+        4  0.03520  0.024 0.022 1.000 0.003-0.012 0.015-0.015 0.003 0.000 0.000
+        5  0.98903 -0.389-0.222 0.003 1.000-0.869 0.643-0.449 0.066 0.007 0.002
+        6  0.99916  0.280 0.160-0.012-0.869 1.000-0.925 0.788-0.103-0.011 0.000
+        7  0.99961 -0.166-0.095 0.015 0.643-0.925 1.000-0.961 0.058 0.006-0.002
+        8  0.99854  0.085 0.049-0.015-0.449 0.788-0.961 1.000-0.005-0.001 0.003
+        9  0.31119 -0.012-0.007 0.003 0.066-0.103 0.058-0.005 1.000 0.105 0.009
+       10  0.11095 -0.001-0.001 0.000 0.007-0.011 0.006-0.001 0.105 1.000-0.036
+       11  0.03871 -0.001-0.001 0.000 0.002 0.000-0.002 0.003 0.009-0.036 1.000
+
+ FCN=  -1162269.     FROM MIGRAD    STATUS=PROGRESS     121 CALLS     1383 TOTAL
+                     EDM=  0.50E-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          1886.0        77.164      -0.80521E-01   0.66857E-07
+   2    SIG1       0.32726E-02   0.50730E-03  -0.52193E-07   0.24160    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5317       0.30056E-03   0.54926E-06  -0.20480    
+   5    A0         0.25979E+06    3600.0       0.41139       0.16830E-07
+   6    A1        -0.47752E+06    24681.        7.4514      -0.33061E-08
+   7    A2         0.38631E+06    60091.       -41.952       0.97789E-08
+   8    A3         -70483.        48292.        41.898      -0.67714E-08
+   9    N2          59.112        50.808       0.10441      -0.46830E-04
+  10    SIG2       0.80406E-02   0.11926E-02   0.40637E-04   0.37954    
+  11    M2          1.8621       0.19702E-02   0.72144E-04    1.8857    
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+   START COVARIANCE MATRIX CALCULATION.
+ EIGENVALUES OF SECOND-DERIVATIVE MATRIX:
+         0.6873E-03  0.8287E-02  0.2000E+00  0.6738E+00  0.8852E+00  0.9858E+00
+         0.1002E+01  0.1120E+01  0.1333E+01  0.3791E+01
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+
+ FCN=  -1162269.     FROM MIGRAD    STATUS=CONVERGED    229 CALLS     1491 TOTAL
+                     EDM=  0.48E-05    STRATEGY= 2      ERROR MATRIX ACCURATE 
+
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME        VALUE          ERROR          SIZE      DERIVATIVE 
+   1    N1          1886.0        76.761       0.56069       0.98624E-07
+   2    SIG1       0.32726E-02   0.50825E-03   0.19704E-04   0.19453    
+   3    GAMMA      0.91000E-02   constant   
+   4    M1          1.5317       0.30058E-03   0.63290E-04  -0.82561E-01
+   5    A0         0.25979E+06    3300.9        22.301       0.24796E-07
+   6    A1        -0.47752E+06    20827.        41.974       0.24268E-08
+   7    A2         0.38631E+06    49464.        67.619       0.14031E-07
+   8    A3         -70483.        40571.        100.11      -0.36921E-08
+   9    N2          59.112        50.946        2.0333      -0.46272E-04
+  10    SIG2       0.80406E-02   0.11955E-02   0.62469E-03    1.2600    
+  11    M2          1.8621       0.19703E-02   0.10359E-02   0.78019    
+
+ EXTERNAL ERROR MATRIX.    NDIM=  50    NPAR= 10    ERR DEF=  1.00    
+ ELEMENTS ABOVE DIAGONAL ARE NOT PRINTED.
+  0.589E+04
+  0.151E-01 0.258E-06
+  0.600E-03 0.416E-08 0.903E-07
+ -0.957E+05-0.362E+00-0.933E-04 0.109E+08
+  0.424E+06 0.161E+01-0.550E-01-0.585E+08 0.434E+09
+ -0.501E+06-0.191E+01 0.185E+00 0.921E+08-0.922E+09 0.245E+10
+  0.119E+06 0.460E+00-0.152E+00-0.429E+08 0.599E+09-0.190E+10 0.165E+10
+ -0.289E+02-0.111E-03 0.388E-04 0.933E+04-0.106E+06 0.118E+06 0.301E+05
+  0.260E+04
+ -0.701E-04-0.271E-09 0.106E-09 0.245E-01-0.284E+00 0.322E+00 0.741E-01
+  0.685E-02 0.143E-05
+ -0.161E-03-0.608E-09-0.940E-11 0.158E-01-0.415E-01-0.145E+00 0.251E+00
+  0.136E-02-0.106E-06 0.388E-05
+
+ PARAMETER  CORRELATION COEFFICIENTS
+       NO.  GLOBAL     1     2     4     5     6     7     8     9    10    11
+        1  0.49810  1.000 0.386 0.026-0.378 0.265-0.132 0.038-0.007-0.001-0.001
+        2  0.39455  0.386 1.000 0.027-0.216 0.152-0.076 0.022-0.004 0.000-0.001
+        4  0.03679  0.026 0.027 1.000 0.000-0.009 0.012-0.012 0.003 0.000 0.000
+        5  0.98694 -0.378-0.216 0.000 1.000-0.851 0.564-0.321 0.055 0.006 0.002
+        6  0.99882  0.265 0.152-0.009-0.851 1.000-0.895 0.709-0.100-0.011-0.001
+        7  0.99943 -0.132-0.076 0.012 0.564-0.895 1.000-0.945 0.047 0.005-0.001
+        8  0.99793  0.038 0.022-0.012-0.321 0.709-0.945 1.000 0.015 0.002 0.003
+        9  0.31224 -0.007-0.004 0.003 0.055-0.100 0.047 0.015 1.000 0.113 0.014
+       10  0.12174 -0.001 0.000 0.000 0.006-0.011 0.005 0.002 0.113 1.000-0.045
+       11  0.04888 -0.001-0.001 0.000 0.002-0.001-0.001 0.003 0.014-0.045 1.000
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   16 **CALL FCN 
+ **********
+ ENTER MINUIT COMMAND:                  
+ **********
+ **   17 **STOP 
+ **********
+
+ CALL TO USER FUNCTION WITH IFLAG = 3
+
+ ..........MINUIT TERMINATED BY MINUIT COMMAND: STOP                 

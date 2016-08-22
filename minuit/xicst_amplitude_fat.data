@@ -1,0 +1,41 @@
+SET TITLE
+FIT xicst
+PARAMETERS
+ 1  'N1'                   300.             0.0001
+ 2  'SIG1'                 0.0030            0.0001
+ 3  'GAMMA'                0.0091            0.0001
+ 4  'M1'                   1.532             0.005
+ 5  'PWR'                  0.55757           0.005
+ 6  'A0'                   0.26030E+06       0.005
+ 7  'A1'                  -0.47865E+06       0.005
+ 8  'A2'                   0.38900E+06       0.005
+ 9  'A3'                   -73667.           0.005
+10  'N2'                   0.00              0.001
+11  'SIG2'                 0.008             0.0012          
+12  'M2'                   1.862             0.002
+13  'GAM2'                 0.017             0.001
+
+ SHOW PAR 
+ SET STR 2 
+ FIX 2 
+ FIX 3 
+ FIX 4 
+ FIX 10 
+ FIX 11 
+ FIX 12 
+ FIX 13
+ SET PRI 2
+ MIGRAD 
+ REL 4 
+ MIGRAD 
+ REL 3 
+ MIGRAD 
+ REL 2 
+ MIGRAD 
+ REL 12 
+ REL 11 
+ REL 10 
+ REL 13
+ MIGRAD 
+ CALL FCN
+ STOP

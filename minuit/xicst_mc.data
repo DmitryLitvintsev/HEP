@@ -1,0 +1,15 @@
+SET TITLE
+FIT mc_1862
+PARAMETERS
+ 1  'N1'                   1000.        0.0001
+ 2  'SIG1'                 0.005        0.0001
+ 3  'M1'                   1.862        0.005
+
+
+ SHOW PAR 
+ SET STR 2 
+ SET PRI 1
+ MIG 
+ MINOS
+ CALL FCN
+ STOP 

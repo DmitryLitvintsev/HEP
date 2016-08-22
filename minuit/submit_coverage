@@ -1,0 +1,17 @@
+rm coverage.tgz
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_10-\$.tgz litvinse@fnal.gov short 1 1000 ./coverage.csh $
+
+
+rm coverage.tgz
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_20-\$.tgz litvinse@fnal.gov short 1 1000 ./coverage.csh $
+
+
+rm coverage.tgz
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_30-\$.tgz litvinse@fnal.gov short 1 1000 ./coverage.csh $
+
+rm coverage.tgz
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_40-\$.tgz litvinse@fnal.gov short 1 1000 ./coverage.csh $

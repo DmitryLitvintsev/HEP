@@ -1,0 +1,7 @@
+*** Begin of history file: Sat Feb 19 00:08:08 2005
+h/file 80 signal.hist
+h/plot 1
+h/plot 1(:120)
+.q
+exit
+*** End   of history file: Sat Feb 19 00:09:50 2005

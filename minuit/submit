@@ -1,0 +1,129 @@
+rm coverage.tgz
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/0/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_0-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/10/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_10-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/20/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_20-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/30/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_30-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/40/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_40-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/50/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_50-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/60/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_60-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/70/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_70-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/80/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_80-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/90/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_90-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+
+rm coverage.f
+rm coverage.tgz
+
+
+cat xipiminus_coverage.f | sed -e "s/REPLACEME/100/g" > coverage.f
+./go coverage
+tar cvfz coverage.tgz coverage.exe coverage.csh
+Cafcom coverage.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/coverage/coverage_100-\$.tgz litvinse@fnal.gov short 1 100 ./coverage.csh $
+
+
+
+tar cvfz scan.tgz data_points_right_sign.dat scan.exe scan.csh
+
+ setup cdfsoft2 5.3.1
+ ./go xipiplus_amplitude_scan
+ tar cvfz scan.tgz jet20_data_points_rs.dat  scan.exe scan.csh
+ setup cdfsoft2 development
+ Cafcom scan.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/scan/jet_scan-\$.tgz litvinse@fnal.gov short 1 101 ./scan.csh $
+
+ setup cdfsoft2 5.3.1
+  ./go xipiminus_amplitude_scan
+ rm scan.tgz
+ 
+ tar cvfz scan.tgz data_points_wrong_sign.dat  scan.exe scan.csh
+ setup cdfsoft2 development
+ Cafcom scan.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/scan/minus_scan-\$.tgz litvinse@fnal.gov short 1 101 ./scan.csh $
+
+ setup cdfsoft2 5.3.1
+  ./go xipiminus_amplitude_scan
+ rm scan.tgz
+ 
+ tar cvfz scan.tgz jet20_data_points_ws.dat  scan.exe scan.csh
+ setup cdfsoft2 development
+ Cafcom scan.tgz litvinse@chlorine.fnal.gov:/cdf/disk01/g2/dmitri/scan/jet_minus_scan-\$.tgz litvinse@fnal.gov short 1 101 ./scan.csh $
+
+
+

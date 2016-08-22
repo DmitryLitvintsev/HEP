@@ -1,0 +1,45 @@
+  MINUIT RELEASE 96.03  INITIALIZED.   DIMENSIONS 100/ 50  EPSMAC=  0.89E-15
+
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 'N1        '    2000.0      0.10000E-02     no limits
+     2 'SIG1      '   0.32000E-02  constant
+     3 'GAMMA     '   0.91000E-02  0.10000E-02     no limits
+     4 'M1        '    1.5318      0.10000E-02     no limits
+     5 'PWR       '   0.55732      0.10000E-02     no limits
+     6 'A0        '   0.32449E+06  0.10000E-02     no limits
+     7 'A1        '  -0.80838E+06  0.10000E-02     no limits
+     8 'A2        '   0.10004E+07  0.10000E-02     no limits
+     9 'A3        '  -0.45648E+06  0.10000E-02     no limits
+ **********
+ **    1 **CALL FCN   1.000    
+ **********
+
+ FCN=  -1489200.     FROM CALl fcn  STATUS=RESET          1 CALLS        1 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+
+  EXT PARAMETER               CURRENT GUESS      PHYSICAL LIMITS       
+  NO.   NAME        VALUE          ERROR       NEGATIVE      POSITIVE  
+   1    N1          2000.0       0.10000E-02
+   2    SIG1       0.32000E-02   constant   
+   3    GAMMA      0.91000E-02   0.10000E-02
+   4    M1          1.5318       0.10000E-02
+   5    PWR        0.55732       0.10000E-02
+   6    A0         0.32449E+06   0.10000E-02
+   7    A1        -0.80838E+06   0.10000E-02
+   8    A2         0.10004E+07   0.10000E-02
+   9    A3        -0.45648E+06   0.10000E-02
+ **********
+ **    2 **SET PRINT   2.000    
+ **********
+ **********
+ **    3 **SET STR   2.000    
+ **********
+
+ NOW USING STRATEGY  2: MAKE SURE MINIMUM TRUE, ERRORS CORRECT  
+
+ **********
+ **    4 **MIGRAD
+ **********
+ START MIGRAD MINIMIZATION.  STRATEGY 2.  CONVERGENCE WHEN EDM .LT. 0.10E-03
+   START COVARIANCE MATRIX CALCULATION.

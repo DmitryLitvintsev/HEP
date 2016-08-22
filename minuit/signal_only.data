@@ -1,0 +1,16 @@
+SET TITLE
+FIT xicst
+PARAMETERS
+ 1  'N1'                   20000.             0.0001
+ 2  'SIG1'                 0.0032            0.001
+ 3  'GAMMA'                0.001            0.0001
+ 4  'M1'                   1.5318             0.00
+
+ SHOW PAR 
+ SET STR 2
+ stop 
+  SET PRI 2
+ MIGRAD 
+  CALL FCN
+ STOP
+

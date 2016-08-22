@@ -1,0 +1,31 @@
+SET TITLE
+FIT xicst
+PARAMETERS
+ 1  'N1'                   2000.        100.
+ 2  'SIG1'                 0.005        0.0001
+ 3  'GAMMA'                0.0091       0.0
+ 4  'M1'                   1.532        0.005
+ 5  'N2'                   0.0          0.0
+ 6  'SIG2'                 0.008        0.0
+ 7  'M2'                   1.862        0.0
+ 8  'A0'                   444.0        6.0
+ 9  'A1'                   -2.0         0.1
+ 10  'A2'                   1.2          0.43
+ 11  'A3'                   0.08         0.43
+
+ FIX 2
+ FIX 3
+ FIX 4
+ FIX 2
+ SET STR 2
+ MIGRAD
+ REL 1 
+ MIGRAD 
+ REL 2 
+ MIGRAD 
+ REL 4
+ MIGRAD 
+ CALL FCN
+ STOP
+
+

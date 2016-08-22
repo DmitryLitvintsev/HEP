@@ -1,0 +1,163 @@
+[global]
+; Global definitions
+;
+; List of available analysis farms and default choice
+af_list=caf,knu-mc-only,as-mc-only,cnaf,ucsd-mc-only,cafcondor,sdsccaf,torcaf2
+default_af=caf
+
+
+[caf]
+; CDF Central Analysis Farm
+;
+; Headnode name, submitter port, and service/host principal
+host=fcdfhead1.fnal.gov
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+; icaf_host=cdfhead1.fnal.gov
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test,cdfmc,cdfopr,trigsim,sam,short_italy,long_cmu,long_pitt,long_mit,long_uk,long_yale,long_jhu,long_harvard,long_ucdavis,long_japan,long_geneva,long_ttu,long_michigan,physmon
+default_pt=short
+
+
+[cafcondor]
+; CDF Central Analysis Farm
+;
+; Headnode name, submitter port, and service/host principal
+host=fcdfcaf483.fnal.gov
+submitter_port=8100
+monitor_port=8120
+groupupdate_port=8140
+icaf_host=cdfhead1.fnal.gov
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test
+default_pt=short
+
+[cnaf]
+; CNAF Farm
+;
+; Headnode name, submitter port, and service principal
+host=cdfhead.cnaf.infn.it
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test
+default_pt=short
+
+
+[sdsccaf]
+; San Diego Supercomputing Center
+;
+; Headnode name, submitter port, and service/host principal
+host=t2cdf01.sdsc.edu
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8140
+icaf_host=fcdfhead1.fnal.gov
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test
+default_pt=short
+
+[ucsd-mc-only]
+; UC San Diego test Farm, Mayer Hall
+;
+; Headnode name, submitter port, and service/host principal
+host=cdf001.ucsd.edu
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,development,test
+default_pt=short
+
+[knu-mc-only]
+; Kyungpook National University Farm
+;
+; Headnode name, submitter port, and service/host principal
+host=cluster46.knu.ac.kr
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long
+default_pt=short
+
+[as-mc-only]
+; CAF @ Academica Sinica in Taiwan
+host=ascaf.sinica.edu.tw
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+; icaf_host=ascaf.sinica.edu.tw
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test
+default_pt=short
+
+[testcaf]
+; Development and Testing Farm
+;
+; Headnode name, submitter port, and service/host principal
+host=fcdfhead2.fnal.gov
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,long_sam,test,sam
+default_pt=short
+
+[rutgers]
+; Rutgers Farm
+;
+; Headnode name, submitter port, and service principal
+host=hexcaf.rutgers.edu
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+icaf_port=9035
+svc=cdfcaf
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test,sam
+default_pt=short
+;
+; TORONTO Farm
+;
+[torcaf2]
+; Headnode name, submitter port, and service principal
+host=bigmac-cdf01.physics.utoronto.ca
+submitter_port=8000
+monitor_port=8020
+groupupdate_port=8040
+; icaf_host=bigmac-cdf01.physics.utoronto.ca
+icaf_host=fcdfhead1.fnal.gov
+icaf_port=9035
+svc=host
+;
+; List of available process types and default choice
+pt_list=short,medium,long,test
+default_pt=short
