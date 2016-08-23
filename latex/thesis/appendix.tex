@@ -1,0 +1,371 @@
+\appendix 
+\chapter{Список сотрудников коллаборации ARGUS}
+\label{sec:authors}
+%   03/07/89 304222203  MEMBER NAME  ARGTITLE (TEX.S)    M  TEX
+%
+% This is an ARGUS title page with full author list / rev 91/6/17
+%
+% Use it with LaTeX
+%
+% The title of the paper should be provided in the \title{...} field.
+%
+%%%%%%%% layout of title page
+\message{*** ARGUS title page, to be used with LaTeX ***}
+\pagestyle{empty}
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\marginparwidth}{2.4truecm}
+\setlength{\marginparsep}{0pt}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\textheight}{24.7truecm}
+\setlength{\textwidth}{16.4truecm}
+%\setlength{\footheight}{12pt}
+\setlength{\footskip}{24pt}
+\renewcommand{\baselinestretch}{1.0}
+\parskip = 4pt plus 0.10fill
+%%%%%%%%% no page number
+\let\thepage\relax
+%%%%%%%%% formatting of paragraphs
+\def\centerformat{%
+    \pretolerance = 2000 \tolerance = 3000 \hbadness 500
+    \parindent = 0pt \parskip = 0pt \catcode"0D = 5
+    \rightskip = 20pt plus 1fill\leftskip  = 20pt plus 1fill
+    \spaceskip = 0.35em \xspaceskip = 0.45em \parfillskip = 0pt
+    \hyphenpenalty = 1000 \exhyphenpenalty = 1000}
+%%%%%%%%% initial-name separation
+\def\:{.\kern 2pt\relax}
+%%%%%%%%% font definitions
+\font\sixrm=cmr6
+\font\egtrm=cmr8
+%%
+%%%%%%%%%
+%%%%%%%%% TITLE
+%%%%%%%%%
+\def\title#1{{\centerformat{%
+    \Large \bf
+    #1\par}}%
+    \vskip 2pt\vskip\parskip}
+%%%%%%%%%
+%%%%%%%%% AUTHORs' NAMES
+%%%%%%%%%
+\def\authors#1{{\centerformat{\rm #1\par}}}
+%%%%%%%%%
+%%%%%%%%% INSTITUTIONs' NAMES
+%%%%%%%%%
+\def\inst#1{{\centerformat{\it #1\par}}\vskip \parskip}
+%%%%%%%%%
+%%%%%%%%% special footnote macro
+%%%%%%%%%
+\newcount\fnnumber
+\def\fn#1#2{\/%
+    \expandafter\ifx\csname FnN#1\endcsname\relax%
+    \global\advance\fnnumber 1%
+    \expandafter\xdef\csname FnN#1\endcsname%
+    {\the\fnnumber}%
+    \insert\footins{\interlinepenalty=\interfootnotelinepenalty
+    \leftskip=0pt\rightskip=0pt\parfillskip=0pt plus 1fill
+    \spaceskip=2.5pt plus 1.5pt minus 1pt
+    \xspaceskip=3pt plus 2pt minus 1pt
+    \baselineskip = 0.8\normalbaselineskip \lineskip = \normallineskip
+    \pretolerance=2000\tolerance=3000
+    \hyphenpenalty=500\exhyphenpenalty=50
+    \hangindent 4.1mm\hangafter 1
+    \noindent\hbox to 4.1mm{\hss$^{\sixrm\the\fnnumber}$\kern 0.67mm}%
+    \vrule width 0pt height 1\baselineskip\egtrm #2}%
+    \fi$^{\csname FnN#1\endcsname}\!$}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\title{}
+
+\inst {The ARGUS Collaboration}
+
+\authors {%
+ H\:Albrecht,
+ A\:A\:Andam,
+ U\:Binder,
+ P\:B\"{o}kmann,
+ G\:Drews,
+ H\:Ehrlichmann,
+ R\:Gl\"{a}ser,
+ T\:Hamacher,
+ G\:Harder,
+ H\:Hasemann,
+ R\:P\:Hofmann,
+ H\:Kapitza,
+ T\:Kirchhoff,
+ A\:Kr\"{u}ger,
+ I\:Lembke-Koppitz,
+ A\:Nau,
+ A\:W\:Nilsson,
+ A\:Nippe,
+ S\:Nowak\fn{IfH}{DESY, IfH Zeuthen},
+ A\:Philipp,
+ M\:Reidenbach,
+ M\:Sch\"{a}fer,
+ H\:Schr\"oder,
+ H\:D\:Schulz,
+ F\:Sefkow,
+ F\:Selonke,
+ U\:Volland,
+ M\:Walter\fn{IfH}{},
+ R\:Wurth,
+ A\:Yagil
+}
+\inst {DESY, Hamburg, Germany}
+
+\authors {%
+ R\:D\:Appuhn,
+ U\:Buchner,
+ J\:P\:Donker,
+ A\:Drescher,
+ H\:J\:Graf,
+ B\:Gr\"{a}we,
+ C\:Hast,
+ G\:Herrera,
+ D\:Kamp,
+ H\:Kolanoski,
+ A\:Kosche,
+ A\:Lange,
+ A\:Lindner,
+ R\:Mankel,
+ A\:Markees,
+ U\:Matthiesen,
+ H\:Scheck,
+ M\:Schieber,
+ G\:Schweda,
+ T\:Siegmund,
+ B\:Spaan,
+ H\:Thurn,
+ D\:T\"opfer,
+ A\:Walther,
+ D\:Wegener
+ S\:Westerhoff}
+\inst {Institut f\"ur Physik\fn{DO}{%
+ Supported by the German
+ Bundesministerium f\"ur Forschung und Technologie, under contract
+ number 054DO51P.},
+ Universit\"at Dortmund,
+ Germany}
+
+\authors {%
+M\:Bittner,
+P\:Eckstein,
+C\:Frankl,
+J\:Graf,
+R\:Holtzhauer,
+M\:Schmidtler,
+M\:Schramm,
+K\:R\:Schubert,
+R\:Schwierz,
+M\:t\"{o}pfer,
+R\:Waldi}
+\inst{Institut f\"ur Kern- und Teilchenphysik\fn{DR}{%
+Supported by the German Bundesministerium f\"ur Forschung
+und Technologie, under contract number 055DD11P.},
+Technische Universit\"at Dresden, Germany}
+
+\authors {%
+ M\:Paulini,
+ K\:Reim,
+ H\:Wegener}
+\inst{Physikalisches Institut\fn{ER}{%
+ Supported by the
+ German Bundesministerium f\"ur Forschung und Technologie, under
+ contract number 054ER12P.}, Universit\"at Erlangen-N\"urnberg,
+ Germany}
+
+\authors {%
+ o\:Behnke,
+ R\:Eckmann,
+ M\:Hapke,
+ H\:Kuipers,
+ O\:Mai,
+ R\:Mundt,
+ T\:Oest,
+ R\:Reiner,
+ A\:Rohde,
+ W\:Schmidt-Parzefall,
+ P\:Weyers}
+\inst{II. Institut f\"ur Experimentalphysik, Universit\"at Hamburg,
+ Germany}
+
+\authors {%
+ U\:Becker,
+ C\:Ehmann,
+ K\:Fritz,
+ W\:Funk,
+ F\:Heintz,
+ R\:Heller,
+ T\:Klinger,
+ R\:Salomon,
+ B\:Schwingenheuer,
+ J\:Stiewe,
+ P\:Utzat,
+ S\:Werner}
+\inst{Institut f\"ur Hochenergiephysik\fn{HD}{%
+ Supported by the
+ German Bundesministerium f\"ur Forschung und Technologie, under
+ contract number 055HD21P.}, Universit\"at Heidelberg, Germany}
+
+\authors {%
+ S\:Ball,
+ K\:Ehret,
+ J\:C\:Gabriel,
+ C\:Geyer,
+ W\:Hofmann,
+ A\:H\"{o}lscher,
+ B\:Holzer,
+ A\:H\"upper,
+ S\:Khan,
+ K\:T\:Kn\"opfle,
+ M\:Seeger,
+ M\:Spahn,
+ J\:Spengler}
+\inst{Max-Planck-Institut f\"ur Kernphysik, Heidelberg, Germany}
+
+\authors {%
+ D\:I\:Britton%
+\fn{Mg}{McGill University, Montreal, Quebec, Canada.},
+ N\:N\:Brown\fn{Mg}{},
+ C\:E\:K\:Charlesworth%\fn{To}{},
+\fn{To}{University of Toronto, Toronto, Ontario, Canada.},
+ K\:W\:Edwards%
+\fn{Ca}{Carleton University, Ottawa, Ontario, Canada.},
+ R\:Fernholz\fn{Mg}{},
+ W\:Frisken%\fn{Yo}{},
+\fn{Yo}{York University, Downsview, Ontario, Canada.},
+ C\:Fukunaga\fn{Yo}{},
+ D\:J\:Gilkinson\fn{To}{},
+ D\:M\:Gingrich\fn{To}{},
+ M\:Goddard\fn{Yo}{},
+ E\:R\:F\:Hyatt\fn{Mg}{},
+ P\:C\:H\:Kim\fn{To}{},
+ P\:Krieger\fn{To}{},
+ R\:Kutschke\fn{To}{},
+ D\:B\:MacFarlane\fn{Mg}{},
+ J\:A\:McKenna\fn{To}{},
+ K\:W\:McLean\fn{Mg}{},
+ R\:S\:Orr\fn{To}{},
+ P\:Padley\fn{To}{},
+ J\:A\:Parsons\fn{To}{},
+ P\:M\:Patel\fn{Mg}{},
+ J\:D\:Prentice\fn{To}{},
+ P\:R\:B\:Saull\fn{Mg}{},
+ S\:C\:Seidel\fn{To}{},
+ H\:C\:J\:Seywerd\fn{To}{},
+ B\:J\:Stacey\fn{To}{},
+ J\:D\:Swain\fn{To}{},
+ G\:Tsipolitis\fn{Mg}{},
+ K\:Tzamariudaki\fn{Mg}{},
+ R\:G\:Van~de~Water\fn{To}{},
+ T.-S\:Yoon\fn{To}{},
+ J\:C\:Yun\fn{Ca}{}}
+\inst {Institute of Particle
+ Physics\fn{CDN}{%
+ Supported by the Natural Sciences and Engineering
+ Research Council, Canada.}, Canada}
+
+\authors {%
+ C\:Ratz,
+ D\:Re\ss ing,
+ T\:Ruf,
+ S\:Schael,
+ M\:Schneider,
+ K\:Strahl,
+ J\:Tamminga,
+ S\:Weseler}
+\inst{Institut f\"ur Experimentelle Kernphysik\fn{KA}{%
+ Supported by the
+ German Bundesministerium f\"ur Forschung und Technologie, under
+ contract number 055KA11P.}, Universit\"at Karlsruhe, Germany}
+
+\authors {%
+ B\:Bo\v stjan\v ci\v c,
+ G\:Kernel,
+ P\:Kri\v zan,
+ E\:Kri\v zni\v c,
+ M\:Ple\v sko,
+ T\:Podobnik,
+ T\:\v Zivko
+}
+\inst{Institut J. Stefan and Oddelek za fiziko\fn{YU}{Supported
+ by the Department of Science and Technology of the Republic of
+ Slovenia and the Internationales B\"uro KfA,
+ J\"ulich.}, Univerza v Ljubljani, Ljubljana, Slovenia}
+
+\authors {%
+ H\:I\:Cronstr\"{o}m,
+ L\:J\"{o}nsson,
+ Y\:Oku}
+\inst{Institut of Physics\fn{Sw}{Supported
+ by the Swedish Research Council.}, University of Lund, Sweden}
+
+\authors {%
+ A\:Arefiev,
+ B\:Babaev,
+ V\:Balagura,
+ S\:Barsuk,
+ I\:Belyaev,
+ V\:Blinov%
+\fn{Nov}{On leave of absence from the Institute of Nuclear Physics, 
+Novosibirsk, Russia.},
+ S\:Chechelnitsky,
+ R\:Chistov,
+ M\:Danilov,
+ A\:Droutskoy,
+ V\:Eiges,
+ B\:Fominykh,
+ E\:Gerhstein,
+ Yu\:Gershtein,
+ A\:Golutvin,
+ I\:Gorelov,
+ O\:Igonkina,
+ I\:Korolko,
+ G\:Kostina,
+ D\:Litvintsev,
+ V\:Lubimov,
+ V\:Matveev,
+ P\:Murat,
+ V\:Nagovitsin,
+ P\:Pakhlov,
+ F\:Ratnikov,
+ N\:Root\fn{Nov}{},
+ A\:Rostovtsev,
+ V\:Ryltsov,
+ A\:Semenov,
+ S\:Semenov,
+ Yu\:Semenov,
+ \fbox{V\:Shevchenko},
+ V\:Shibaev,
+ A\:Snizhko,
+ V\:Soloshenko,
+ V\:Sopov,
+ V\:Tchistilin,
+ I\:Tichomirov,
+ A\:Undrus\fn{Nov}{},
+ Yu\:Zaitsev,
+ V\:Zhilich\fn{Nov}{}}
+\inst{Institute of Theoretical and Experimental Physics\fn{grn}{Partly
+ supported by the International Science Foundation with grants MSB000 and 
+MSB300.}
+Moscow, Russia}
+
+\authors {%
+ R\:Childers,
+ C\:W\:Darden,
+ H\:Gennow}
+\inst{University of South Carolina\fn{DE}{Supported by the U.S.Department of
+Energy, under contract DE-AS09-80ER10690.}, Columbia, SC, USA}
+
+
+\vskip 0pt plus 1fill\eject
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

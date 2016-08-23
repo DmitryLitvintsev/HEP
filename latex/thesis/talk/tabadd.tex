@@ -1,0 +1,115 @@
+%
+%
+%
+%   Macros to produce Bar-Diagramms in Tabels
+%
+%
+\newdimen\tabbarunitwidth
+\newbox\tabvoidbox
+\newdimen\tabvoiddim
+\tabbarunitwidth=1cm
+\countdef\mystart=255
+\newdimen\tabbarunitheight
+\tabbarunitheight=1ex
+\newcounter{fulltabnumber}
+\setcounter{fulltabnumber}{0}
+\def\skipcolsep{\kern-\tabcolsep}
+\def\addcolsep{\kern\tabcolsep}
+\def\ttabb{&}
+%
+%
+% usage: \tabful{entry}
+% fills 'entry' into the table discarding the sep[eration at the tab columns
+%
+\def\tabful#1{\nothing\skipcolsep{#1}\skipcolsep\nothing}
+%
+% usage \tabbox{width}{content}
+% put entry #2 into a parbox of width #1
+%
+\def\tabbox#1#2{%
+\skipcolsep\parbox[t]{#1}{#2}\skipcolsep}
+%
+%
+\def\tablist#1#2#3#4{\skipcolsep\parbox[t]{#1}{#2}&\parbox[t]{#3}{#4}\skipcolsep}
+%
+%
+%   Produce a multicolumn entry of #1 tabs width with format #2 and contents #3
+%   without left and right tabcol spacing
+%   usage like multicolumn:
+%        \fullmlti{n}{|c...}{the entry}
+%
+\def\fullmulti#1#2#3{%
+\multicolumn{#1}{#2}{\skipcolsep\makebox[\tabbarunitwidth]{#3}\skipcolsep}}
+%
+%   usage: \fulltab{the entry}
+%   puts the entry centered in the table with an entry length of \tabbarunitwidth
+%   discarding the seperation at the tab-columns
+%
+\def\fulltab#1{\skipcolsep\makebox[\tabbarunitwidth]{#1}\skipcolsep}
+%
+%   usage: \fullbar
+%   puts a bar in the table with a length of \tabbarunitwidth and height of
+%   \tabbarunitheight discarding the seperation at the tab-columns
+%
+\def\fullbar{\skipcolsep\rule{\tabbarunitwidth}{\tabbarunitheight}\skipcolsep}
+%
+%   usage: \tabbar{n}
+%   puts a bar in the table as n entries with a length of n*\tabbarunitwidth and
+%   height of \tabbarunitheight discarding the seperation at the tab-columns
+%
+\def\tabbar#1{\mystart=#1%
+\begingroup%
+\loop\ifnum\mystart>0%
+\aftergroup\fullbar%
+\ifnum\mystart>1\aftergroup\ttabb\fi%
+\advance\mystart by-1\repeat%
+\endgroup}
+%
+%   usage \ntab{n}  producse n times &
+%
+\def\ntab#1{\mystart=#1%
+\begingroup%
+\loop\ifnum\mystart>0\aftergroup\ttabb\advance\mystart by-1\repeat%
+\endgroup}
+%
+%   usage \tabbarnums{start}{n}
+%   puts a row of n entries with increasing numbers starting with start in the table,
+%   all equally spaced with \tabbarunitwidth discarding any tab columun spacing
+%
+\def\fulltabnum{\fulltab{\arabic{fulltabnumber}}\addtocounter{fulltabnumber}{1}}
+\def\tabbarnums#1#2{\mystart=#2\setcounter{fulltabnumber}{#1}%
+\begingroup%
+\loop\ifnum\mystart>0%
+\aftergroup\fulltabnum%
+\ifnum\mystart>1\aftergroup\ttabb\fi%
+\advance\mystart by-1\repeat%
+\endgroup}
+%
+%   \septab{text} adds column seperation in front of and after text
+%   \sepbtab adds column seperation in front of till tab following text
+%   \sepatab adds column seperation in after till tab following text (just before tab)
+%
+\def\septab#1{\addcolsep #1\addcolsep}
+\def\sepbtab#1&{\addcolsep #1&}
+\def\sepatab#1&{#1\addcolsep&}
+%
+%   usage: \widthtab{width}{the entry}
+%   puts the entry centered in the table with an entry length of width
+%   discarding the seperation at the tab-columns
+%
+\def\widthtab#1#2{\skipcolsep\makebox[#1]{#2}\skipcolsep}
+%
+%
+% usage: \toplinespace{space}  adds extra space st top of line
+%        \botlinespace{space}  adds extra space at bottom of line
+%
+%
+\def\toplinespace#1{%
+\setbox\tabvoidbox=\vbox{\strut}%                       get the height  of a line
+\tabvoiddim=\ht\tabvoidbox\advance\tabvoiddim by #1%
+\rule{0.0em}{\tabvoiddim}}
+\def\botlinespace#1{%
+\setbox\tabvoidbox=\vbox{\strut}%                       get the height  of a line
+\tabvoiddim=\dp\tabvoidbox\advance\tabvoiddim by #1%
+\rule[-\tabvoiddim]{0.0em}{\tabvoiddim}}
+%

@@ -1,0 +1,179 @@
+This is TeX, Version 3.14159 (Web2c 7.0) (format=latex 97.10.10)  14 JAN 2000 12:53
+**talk
+(talk.tex
+LaTeX2e <1996/12/01>
+Babel <v3.6h> and hyphenation patterns for american, english, danish, french, g
+erman, italian, norse, polish, portugese, russian, loaded.
+(/usr/products/tex_files/v3_14159b/cache/inputs/seminar.cls
+Document Class: seminar 1994/09/11, 1.0e
+Document Style: `seminar' v1.0e <1994/09/11> (tvz)
+\slidewidth=\dimen102
+\slideheight=\dimen103
+\footheight=\dimen104
+(/usr/products/tex_files/v3_14159b/cache/inputs/article.cls
+Document Class: article 1996/10/31 v1.3u Standard LaTeX document class
+(/usr/products/tex_files/v3_14159b/cache/inputs/size10.clo
+File: size10.clo 1996/10/31 v1.3u Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen105
+)
+(/usr/products/tex_files/v3_14159b/cache/inputs/sem-page.sty)
+\before@document=\toks14
+\after@document=\toks15
+\before@enddocument=\toks16
+\c@slide=\count87
+\slide@count=\count88
+\@slidebox=\box26
+\not@slidebox=\box27
+\slide@hook=\toks17
+\after@slide=\toks18
+\slide@footins=\insert233
+\slide@listdepth=\count89
+\saved@specials=\box28
+\before@newslide=\toks19
+\after@slidepage=\toks20
+\slidesep=\skip43
+\c@note=\count90
+\slideframewidth=\dimen106
+\slideframesep=\dimen107
+\semin=\dimen108
+\semcm=\dimen109
+)
+(/usr/products/tex_files/v3_14159b/cache/inputs/semcolor.sty
+Style Option: `semcolor' for doc style `seminar' 1.0 <93/04/01> (tvz)
+(/home/lv4/litvinse/tex/inputs/pstricks.tex
+`PSTricks' v97 patch 9  <1998/01/07> (tvz)
+\pst@dima=\dimen110
+\pst@dimb=\dimen111
+\pst@dimc=\dimen112
+\pst@dimd=\dimen113
+\pst@dimg=\dimen114
+\pst@dimh=\dimen115
+\pst@hbox=\box29
+\pst@boxg=\box30
+\pst@cnta=\count91
+\pst@cntb=\count92
+\pst@cntc=\count93
+\pst@cntd=\count94
+\pst@cntg=\count95
+\pst@cnth=\count96
+\pst@toks=\toks21
+(/home/lv4/litvinse/tex/inputs/pstricks.con)
+\psunit=\dimen116
+\psxunit=\dimen117
+\psyunit=\dimen118
+\pslinewidth=\dimen119
+\pst@customdefs=\toks22
+\pslinearc=\dimen120
+\everypsbox=\toks23
+\psframesep=\dimen121
+\pslabelsep=\dimen122
+\theoverlaybox=\box31
+))
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 4.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/cmcyr/m/n on input line 4.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/cmcyr/m/n on input line 4.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmcyr/m/n --> OT1/cmcyr/m/n on input line 5.
+
+(/usr/products/tex_files/v3_14159b/cache/inputs/cmcyralt.sty
+Package: cmcyralt 1994/12/25 v1.0 cmcyr fonts in alt encoding (A.Harin and V.Zh
+ytnikov)
+
+Package cmcyralt v1.0 1994/12/25:
+cmcyr fonts in alternative encoding (A.Harin and V.Zhytnikov)
+) (/usr/products/tex_files/v3_14159b/cache/inputs/epsfig.sty
+Package: epsfig 1996/10/04 v1.7 (e)psfig emulation (SPQR)
+
+(/usr/products/tex_files/v3_14159b/cache/inputs/graphicx.sty
+Package: graphicx 1996/10/31 v1.0c Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/products/tex_files/v3_14159b/cache/inputs/keyval.sty
+Package: keyval 1995/09/21 v1.09 key=value parser (DPC)
+)
+(/usr/products/tex_files/v3_14159b/cache/inputs/graphics.sty
+Package: graphics 1996/10/31 v1.0c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/products/tex_files/v3_14159b/cache/inputs/trig.sty
+Package: trig 1994/10/16 v1.08 sin cos tan (DPC)
+)
+(/usr/products/tex_files/v3_14159b/cache/inputs/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 82.
+
+(/usr/products/tex_files/v3_14159b/cache/inputs/dvips.def
+File: dvips.def 1996/12/12 v3.0d Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen123
+\Gin@req@width=\dimen124
+)
+\epsfxsize=\dimen125
+\epsfysize=\dimen126
+)
+(/home/lv4/litvinse/tex/inputs/pstricks.sty
+Package: pstricks 1997/03/25 package wrapper for PSTricks pstricks.tex
+
+(/home/lv4/litvinse/tex/inputs/pstricks.tex))
+(/home/lv4/litvinse/tex/inputs/pst-node.sty
+Package: pst-node 1997/03/25 package wrapper for PSTricks pst-node.tex
+
+(/home/lv4/litvinse/tex/inputs/pst-node.tex  v97 patch 4, 1997/09/26
+\psrow=\count97
+\pscol=\count98
+\psmatrixcnt=\count99
+\psrowsep=\skip44
+\pscolsep=\skip45
+))
+(tabadd.tex
+\tabbarunitwidth=\dimen127
+\tabvoidbox=\box32
+\tabvoiddim=\dimen128
+\tabbarunitheight=\dimen129
+\c@fulltabnumber=\count100
+) (myslides.tex) (../defs.tex)
+No file talk.aux.
+\openout1 = `talk.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Try loading font information for OT1+cmcyr on input line 16
+.
+(/usr/products/tex_files/v3_14159b/cache/inputs/OT1cmcyr.fd)
+! Font OT1/cmcyr/m/n/10=uczr10 at 10.0pt not loadable: Metric (TFM) file not fo
+und.
+<to be read again> 
+                   relax 
+l.16 \begin{document}
+                     
+? x
+ 
+Here is how much of TeX's memory you used:
+ 2203 strings out of 10903
+ 24054 string characters out of 70813
+ 86372 words of memory out of 263001
+ 5122 multiletter control sequences out of 10000+0
+ 3640 words of font info for 14 fonts, out of 100000 for 500
+ 45 hyphenation exceptions out of 1000
+ 32i,0n,21p,213b,104s stack positions out of 300i,100n,500p,3000b,4000s
+No pages of output.

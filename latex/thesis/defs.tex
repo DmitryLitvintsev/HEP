@@ -1,0 +1,207 @@
+%
+% Units of measure
+%
+
+\newcommand{\mev}{\ifmmode  \rm{MeV}
+                 \else
+                            \mbox{MeV}
+                 \fi
+                 }
+
+\newcommand{\mevc}{\ifmmode \rm{MeV/c}
+                 \else
+                            \mbox{MeV/c}
+                 \fi
+                 }
+
+\newcommand{\mevcc}{\ifmmode \rm{MeV/c}^2
+                 \else
+                           \mbox{MeV/c$^2$}
+                 \fi
+                 }
+
+\newcommand{\gev}{\ifmmode \rm{GeV}
+                 \else
+                           \mbox{GeV}
+                 \fi
+                 }
+
+\newcommand{\gevc}{\ifmmode \rm{GeV/c}
+                 \else
+                           \mbox{GeV/c}
+                 \fi
+                 }
+
+\newcommand{\gevcc}{\ifmmode \rm{GeV/c}^2
+                 \else
+                           \mbox{GeV/c}$^2$
+                 \fi
+                 }
+\newcommand{\kev}{\ifmmode \rm{keV}
+                 \else
+                           \mbox{keV}
+                 \fi
+                 }
+
+\newcommand{\mmsq}{\ifmmode \rm{ÕÕ}^2
+                 \else
+                           \mbox{ÕÕ}$^2$
+                 \fi
+                 }
+
+\newcommand{\mm}{\ifmmode \rm{ÕÕ}
+                 \else
+                           \mbox{ÕÕ}
+                 \fi
+                 }
+
+\newcommand{\cm}{\ifmmode \rm{cÕ}
+                 \else
+                           \mbox{cÕ}
+                 \fi
+                 }
+
+\newcommand{\mkm}{\ifmmode \rm{ÕÀÕ}
+                 \else
+                           \mbox{ÕÀÕ}
+                 \fi
+                 }
+
+\newcommand{\m}{\ifmmode \rm{Õ}
+                 \else
+                           Õ
+                 \fi
+                 }
+
+\newcommand{\tl}{\ifmmode \rm{ÙÃ}
+                 \else
+                           \mbox{ÙÃ}
+                 \fi
+                 }
+
+\newcommand{\hz}{\ifmmode \rm{ﬁ√}
+                 \else
+                           \mbox{ﬁ√}
+                 \fi
+                 }
+
+\newcommand{\dedx}{\ifmmode \rm{dE/dx}
+                 \else
+                           \mbox{dE/dx}
+                 \fi
+                 }
+
+\newcommand{\tof}{\ifmmode \rm{ToF}
+                 \else
+                           \mbox{ToF}
+                 \fi
+                 }
+
+\newcommand{\lumi}{\ifmmode \rm{\cal{L}}
+                 \else
+                           \cal{L}
+                 \fi
+                 }
+
+\newcommand{\ee}{\ifmmode \rm{e}^+\rm{e}^-
+                 \else
+                          \mbox{$\rm{e}^+\rm{e}^-$}
+                 \fi
+                }
+\newcommand{\mc}{‹œŒ‘≈--Ÿ¡“Ãœ}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\detarg}{ƒ≈‘≈À‘œ“ ARGUS}
+\newcommand{\detarga}{ƒ≈‘≈À‘œ“¡ ARGUS}
+\newcommand{\ka}{\mbox{$l_k=0$},\mbox{$l_K=1$}}
+\newcommand{\kk}{\mbox{$l_k=1$},\mbox{$l_K=0$}}
+%
+% Particles:
+%
+\newcommand{\lmc}{\Lambda_c^+}
+\newcommand{\lmcst}{\Lambda_c^{*+}}
+\newcommand{\lam}{\Lambda^0}
+\newcommand{\lmcpi}{\Lambda^+_c \pi^+\pi^-}
+\newcommand{\pkpi}{\rm{pK}^-\pi^+}
+\newcommand{\lampi}{\lam \pi^+}
+\newcommand{\lamppi}{\lam \pi^+\pi^+\pi^-}
+\newcommand{\pk}{\rm{p}\bar{\rm{K}}^0}
+\newcommand{\pks}{\rm{p}\ks}
+\newcommand{\dec}{\lmc\ra \pkpi}
+\newcommand{\chain}{\Lambda_c^{*+}\ra\lmc\pi^+\pi^-}
+\newcommand{\sicpi}{\Sigma_c^{++}\pi^-}
+\newcommand{\siczpi}{\Sigma_c^{0}\pi^+}
+\newcommand{\sic}{\Sigma_c^{++}}
+\newcommand{\sicz}{\Sigma_c^{0}}
+
+\newcommand{\lm}{\ifmmode  \Lambda
+                 \else
+                           \mbox{$\Lambda$}
+                 \fi
+                }
+\newcommand{\ks}{\ifmmode \rm{K}_S^0
+                 \else
+                           \mbox{$\rm{K}_S^0$}
+                 \fi
+                }
+                 
+% these below for Young diagrams:
+
+\newcommand{\cell}{\framebox(5,5){}}
+\newcommand{\row}{\framebox(10,5){}}
+\newcommand{\column}{\framebox(5,10){}}
+\newcommand{\mixed}{
+                    \begin{picture}(10,10)(0,0)
+                      \put(0,-1.25){\row}
+                      \put(0,-6.25){\column}
+                    \end{picture}
+                   }
+\newcommand{\srow}{
+                    \begin{picture}(15,5)(0,0)
+                      \multiput(0,-1.25)(5.01,0){3}{\cell}
+                    \end{picture}
+                   }
+\newcommand{\scolumn}{
+                    \begin{picture}(5,15)(0,0)
+                      \multiput(0,-1.25)(0,-5){3}{\cell}
+                    \end{picture}
+                   }
+\newcommand{\drow}{
+                    \begin{picture}(10,5)(0,0)
+                      \multiput(0,-1.25)(5.01,0){2}{\cell}
+                    \end{picture}
+                   }
+\newcommand{\dcolumn}{
+                    \begin{picture}(5,10)(0,0)
+                      \multiput(0,-1.25)(0,-5){2}{\cell}
+                    \end{picture}
+                   }
+\newcommand{\single}{
+                    \begin{picture}(5,5)(0,0)
+                      \put(0,-1.25){\cell}
+                    \end{picture}
+                   }
+
+\newcommand{\mat}{\left(\begin{array}{cc} -\sin{\theta} & \cos{\theta} \\
+                                           \cos{\theta} & \sin{\theta}
+                        \end{array} \right) }
+\newcommand{\rmat}{\left(\begin{array}{cc} \cos{\theta} & \sin{\theta} \\
+                                              -\sin{\theta} & \sin{\theta}
+                        \end{array} \right) }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: t
+%%% End: 

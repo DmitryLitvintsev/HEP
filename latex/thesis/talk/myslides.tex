@@ -1,0 +1,116 @@
+%
+%
+%
+% Fuer Folien: dvips -x1750 -O1.25cm,1.89cm
+%%% Fuer Folien: dvips -x1800 -O1.05cm,1.55cm
+%
+% Bedenke: PostScript Drucker mit Level 2 !!!!!!!!!!!!!!!!!!!!!
+%
+%  Seminar Options
+%
+\setlength{\textwidth}{\slidewidth}
+\setlength{\oddsidemargin}{0cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\slideframesep}{0pt}
+\renewcommand{\slidetopmargin}{0cm}
+\renewcommand{\slidebottommargin}{0cm}
+\parskip0mm
+\parsep0mm
+\parindent 0.0cm
+%
+% PSTricks OPtions
+%
+\psset{linestyle=solid,fillstyle=solid,border=2pt,bordercolor=green,fillcolor=white}
+\newrgbcolor{BackGround}{0.01 0.28 0.42}
+\newrgbcolor{DarkBlue}{0.01 0.05 0.5}
+\newrgbcolor{White}{1 1 1}
+\newrgbcolor{GoldYellow}{1 1.0 0}
+\newrgbcolor{MyYellow}{1 0.75 0.75}
+\newrgbcolor{DarkYellow}{1 0.8 0}
+\newrgbcolor{orange}{1 0.5 0.1}
+\newrgbcolor{coral}{0.95 0.5 0.25}
+\newrgbcolor{myNice}{1 0.3 0.25}
+\newrgbcolor{Heading}{1 0.5 0.35}
+\newrgbcolor{HeadFront}{0.1 0.5 0.1}
+\newrgbcolor{ChoiceA}{1 0.1 0.5}
+\newrgbcolor{ChoiceB}{0.5 0.1 1.0}
+\newrgbcolor{DGreen}{0.07 0.42 0.14}
+\newrgbcolor{stepA}{0.00 0 1.00}
+\newrgbcolor{stepB}{0.25 0 0.75}
+\newrgbcolor{stepC}{0.50 0 0.50}
+\newrgbcolor{stepD}{0.75 0 0.25}
+\newrgbcolor{stepE}{1.00 0 0.00}
+\newgray{light}{0.80}
+
+%\newrgbcolor{SlideBackGround}{0.01 0.28 0.42}
+%\newrgbcolor{SlideFrameGround}{0 0 0}
+%
+\def\NormBorder{\psset{bordercolor=blue,border=0pt}}
+%
+%  Special Boxes
+%
+\def\SpaceBox#1#2#3#4{%
+\psset{fillcolor=#2,border=0}
+\psframebox*[fillcolor=#2,framearc=0,border=0]{%
+\begin{minipage}[b]{#1}
+\begin{center}
+\toplinespace{#3}
+#4
+\botlinespace{#3}
+\end{center}
+\end{minipage}
+}}
+\def\OvalBox#1#2#3#4{%
+\psset{fillcolor=#2,border=0}
+\psframebox*[fillcolor=#2,framearc=0.3,doublesep=0.2,border=0.1]{%
+\begin{minipage}[b]{#1}
+\begin{center}
+\toplinespace{#3}
+#4
+\botlinespace{#3}
+\end{center}
+\end{minipage}
+}}
+\def\OvalLineBox#1#2#3#4#5{%
+\psset{fillcolor=#2,border=0.5,linecolor=red}
+\psframebox*[fillcolor=#2,linecolor=red,
+framearc=0.2,doublesep=0.2,border=0.5]{%
+\begin{minipage}[b]{#1}
+\begin{center}
+\toplinespace{#4}
+#5
+\botlinespace{#4}
+\end{center}
+\end{minipage}
+}}
+\def\CircleBox#1#2#3{%
+\psset{fillcolor=#1,border=0}
+\pscirclebox*[fillcolor=#1,boxsep=true,doublesep=0.2,border=0.1]{%
+\toplinespace{#2}
+#3
+\botlinespace{#2}
+}}
+
+\def\OvalPict#1#2#3{%
+\psset{fillcolor=#1,border=0}
+\psframebox*[fillcolor=#1,framearc=0.3,doublesep=0.2,border=0.1]{%
+\toplinespace{#2}
+#3
+\botlinespace{#2}
+}}
+%
+\def\NormBox#1#2#3{%
+%\thicklines\shadowbox{%
+\psset{fillcolor=#2,border=0}
+\psframebox*[fillcolor=#2,framearc=0,border=0]{%
+\begin{minipage}[b]{#1}
+\begin{center}
+#3
+\end{center}
+\end{minipage}
+}}
+
+
+
+
+
